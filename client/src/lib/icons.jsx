@@ -1,0 +1,56 @@
+import {
+  Atom,
+  Binary,
+  Boxes,
+  Braces,
+  Code2,
+  Cpu,
+  Database,
+  FileJson,
+  GitBranch,
+  Layers,
+  Layout,
+  Network,
+  Palette,
+  Radio,
+  Send,
+  Server,
+  ServerCog,
+  Share2,
+  Sparkles,
+  Terminal,
+  TerminalSquare,
+  Webhook,
+  Zap,
+} from "lucide-react";
+
+const MAP = {
+  Atom,
+  Binary,
+  Boxes,
+  Braces,
+  Code2,
+  Cpu,
+  Database,
+  FileJson,
+  GitBranch,
+  Layers,
+  Layout,
+  Network,
+  Palette,
+  Radio,
+  Send,
+  Server,
+  ServerCog,
+  Share2,
+  Sparkles,
+  Terminal,
+  TerminalSquare,
+  Webhook,
+  Zap,
+};
+
+export function Icon({ name, size = 20, className = "" }) {
+  const Cmp = MAP[name] || Code2;
+  return <Cmp size={size} className={className} />;
+}

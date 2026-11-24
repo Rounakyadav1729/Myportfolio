@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://server-neon-ten-12.vercel.app/api",
+  baseURL: "https://rounakyadav.onrender.com/",
   withCredentials: true,
 });
 

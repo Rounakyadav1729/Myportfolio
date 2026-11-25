@@ -6,7 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/api": "https://rounakyadav.onrender.com",
+      "/api": {target: "https://rounakyadav.onrender.com",
+        changeOrigin: true,
+        secure: true
+      },
       "/uploads": "http://localhost:5000",
     },
   },

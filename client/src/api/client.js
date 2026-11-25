@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://rounakyadav.onrender.com",
+  baseURL: "https://rounakyadav.onrender.com/api",
   withCredentials: true,
 });
 
